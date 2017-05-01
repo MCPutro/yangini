@@ -71,6 +71,7 @@ public class Controller_tambahPasienInap implements ActionListener{
             try{
                 if (source.equals(view.getBtnOk())){
                     //app.addPasien(id, title, name, age, gender, disease, bloodType);
+                    
                     view.reset();
                 }
                 else if (source.equals(view.getBtnReset())){

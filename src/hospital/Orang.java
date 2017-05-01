@@ -66,4 +66,6 @@ public abstract class Orang {
     
     public abstract String toString();
     
+    
+    
 }

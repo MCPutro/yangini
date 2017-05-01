@@ -40,6 +40,7 @@ public class Controller_tambahDokter implements ActionListener {
             int salary = view.getGaji();
             app.addDokter(id, title, name, age, gender, speciality, salary);
             view.reset();
+            app.showDataDokter();
         }
         else if (source.equals(view.getBtnReset())){
             view.reset();

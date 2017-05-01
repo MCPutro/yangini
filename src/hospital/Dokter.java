@@ -39,10 +39,18 @@ public class Dokter extends Orang {
         this.salary = salary;
     }
 
+//    @Override
+//    public String toString() {
+//        return "Nama Dokter : " + getGender() + name;
+//        //(String speciality, int salary, String id, String title, String nama, int age, String gender) { 
+//    }
+
     @Override
     public String toString() {
-        return "Nama Dokter : " + getGender() + name;
-        //(String speciality, int salary, String id, String title, String nama, int age, String gender) { 
+        return "Dokter{" + "speciality=" + speciality + ", salary=" + salary + '}';
     }
+
+    
+    
     
 }

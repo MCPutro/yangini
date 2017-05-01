@@ -57,7 +57,7 @@ public class Aplikasi {
     
     public void showDataDokter(){
         for (Dokter dokter:daftarDokter){
-            System.out.println("Nama Dokter : " + dokter.getGender() + dokter.getName());
+            System.out.println(dokter);
         }
     }
     

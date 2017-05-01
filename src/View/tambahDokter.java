@@ -7,9 +7,9 @@ package View;
 
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
-import javax.swing.JComboBox;
-import javax.swing.JTextField;
-import hospital.Aplikasi;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  *
@@ -22,6 +22,13 @@ public class tambahDokter extends javax.swing.JFrame {
      */
     public tambahDokter() {
         initComponents();
+        this.tfId.setText("DX"+genereteID());
+    }
+
+    String genereteID() {
+        DateFormat dateFormat = new SimpleDateFormat("MMyyyydd HHmmss");
+        Date date = new Date();
+        return dateFormat.format(date);
     }
 
     /**
@@ -109,13 +116,15 @@ public class tambahDokter extends javax.swing.JFrame {
         btnReset.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnReset.setText("Reset");
 
+        tfId.setEditable(false);
+
         boxJenisKelamin.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         boxJenisKelamin.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pilih Jenis Kelamin", "Laki-laki", "Perempuan" }));
 
         boxTitle.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         boxTitle.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pilih Title", "Mr", "Mrs" }));
 
-        btnMainMenu.setIcon(new javax.swing.ImageIcon("D:\\Java\\Tugas Besar PBO\\Home.png")); // NOI18N
+        btnMainMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Home.png"))); // NOI18N
 
         boxSpesialis.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         boxSpesialis.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pilih Jenis Spesialis", "Bedah", "Gigi", "Kandungan", "Kulit dan Kelamin", "Mata" }));
@@ -234,7 +243,7 @@ public class tambahDokter extends javax.swing.JFrame {
     public String getId() {
         return tfId.getText();
     }
-    
+
     public String getBoxTitle() {
         return boxTitle.getSelectedItem().toString();
     }
@@ -242,7 +251,7 @@ public class tambahDokter extends javax.swing.JFrame {
     public String getName() {
         return tfNama.getText();
     }
-    
+
     public int getUmur() {
         return Integer.parseInt(tfUmur.getText());
     }
@@ -250,7 +259,7 @@ public class tambahDokter extends javax.swing.JFrame {
     public String getBoxJenisKelamin() {
         return boxJenisKelamin.getSelectedItem().toString();
     }
-    
+
     public String getSpesialis() {
         return boxSpesialis.getSelectedItem().toString();
     }
@@ -259,19 +268,19 @@ public class tambahDokter extends javax.swing.JFrame {
         return Integer.parseInt(tfGaji.getText());
     }
 
-    public JButton getBtnOk(){
+    public JButton getBtnOk() {
         return btnOk;
     }
-    
-    public JButton getBtnReset(){
+
+    public JButton getBtnReset() {
         return btnReset;
     }
-    
-    public JButton getBtnMainMenu(){
+
+    public JButton getBtnMainMenu() {
         return btnMainMenu;
     }
-    
-    public void reset(){
+
+    public void reset() {
         tfId.setText(null);
         tfNama.setText(null);
         tfUmur.setText(null);
@@ -280,14 +289,13 @@ public class tambahDokter extends javax.swing.JFrame {
         boxJenisKelamin.setSelectedIndex(0);
         boxSpesialis.setSelectedIndex(0);
     }
-    
-    public void addActionListener (ActionListener a){
+
+    public void addActionListener(ActionListener a) {
         btnOk.addActionListener(a);
         btnReset.addActionListener(a);
         btnMainMenu.addActionListener(a);
     }
 
-    
 //    /**
 //     * @param args the command line arguments
 //     */

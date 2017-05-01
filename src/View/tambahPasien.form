@@ -57,49 +57,50 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="btnMainMenu" min="-2" max="-2" attributes="0"/>
+                      </Group>
                       <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="167" max="-2" attributes="0"/>
-                          <Component id="btnReset" min="-2" pref="88" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="btnMainMenu" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="167" max="-2" attributes="0"/>
+                                  <Component id="btnReset" min="-2" pref="88" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
                                   <Component id="btnOk" min="-2" pref="88" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="78" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="labPenyakit" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="labdarah" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="labJk" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="labUmur" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="labNama" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="labTitle" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="labId" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="tfPenyakit" max="32767" attributes="0"/>
+                                      <Component id="tfUmur" max="32767" attributes="0"/>
+                                      <Component id="boxJenisKelamin" alignment="0" pref="212" max="32767" attributes="0"/>
+                                      <Component id="boxGolDar" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="tfId" max="32767" attributes="0"/>
+                                      <Component id="boxTitle" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="tfNama" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
                               </Group>
                           </Group>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="109" max="-2" attributes="0"/>
-                          <Component id="labtambahPasien" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="labPenyakit" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="labdarah" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="labJk" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="labUmur" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="labNama" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="labTitle" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="labId" alignment="0" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="tfPenyakit" max="32767" attributes="0"/>
-                              <Component id="tfUmur" max="32767" attributes="0"/>
-                              <Component id="boxJenisKelamin" alignment="0" pref="212" max="32767" attributes="0"/>
-                              <Component id="boxGolDar" alignment="0" max="32767" attributes="0"/>
-                              <Component id="tfId" max="32767" attributes="0"/>
-                              <Component id="boxTitle" alignment="0" max="32767" attributes="0"/>
-                              <Component id="tfNama" alignment="0" max="32767" attributes="0"/>
-                          </Group>
+                          <EmptySpace min="0" pref="78" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="118" max="-2" attributes="0"/>
+                  <Component id="labtambahPasien" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -145,7 +146,7 @@
                       <Component id="labdarah" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="boxGolDar" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="39" max="32767" attributes="0"/>
+                  <EmptySpace pref="15" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="btnReset" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                       <Component id="btnOk" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
@@ -235,6 +236,9 @@
         <Component class="javax.swing.JTextField" name="tfNama">
         </Component>
         <Component class="javax.swing.JTextField" name="tfId">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+          </Properties>
         </Component>
         <Component class="javax.swing.JComboBox" name="boxTitle">
           <Properties>
@@ -303,7 +307,7 @@
         <Component class="javax.swing.JButton" name="btnMainMenu">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="D:\Java\Tugas Besar PBO\Home.png"/>
+              <Image iconType="3" name="/Images/Home.png"/>
             </Property>
           </Properties>
         </Component>
